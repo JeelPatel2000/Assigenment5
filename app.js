@@ -2,9 +2,9 @@ const http = require("http");
 
 http
   .createServer((req, res) => {
-    var url = req.url;
+    var url = req.url.toLowerCase();
 
-    if (url === "/Delhi") {
+    if (url === "/delhi") {
       res.write(
         JSON.stringify([
           {
